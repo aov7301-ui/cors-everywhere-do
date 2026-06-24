@@ -110,16 +110,6 @@ const proxy = "https://APP-ANDA.ondigitalocean.app/";
 const url = proxy + "https://otte.live.fly.ww.aiv-cdn.net/.../cenc.mpd";
 ```
 
-**Lewat VPS tvkita.my.id (disarankan — rewrite M3U8/MPD otomatis):**
-
-```javascript
-const url =
-  "https://tvkita.my.id/cors/play.mpd?url=" +
-  encodeURIComponent("https://otte.live.fly.ww.aiv-cdn.net/.../cenc.mpd");
-```
-
----
-
 ## Catatan
 
 - URL MPD Amazon **expired** cepat — ambil fresh dari Prime Video
