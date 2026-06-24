@@ -1,0 +1,16 @@
+{
+  "name": "cors-everywhere-do",
+  "version": "1.0.0",
+  "private": true,
+  "description": "cors-anywhere relay for Amazon CDN — deploy to DigitalOcean App Platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "cors-anywhere": "^0.4.4"
+  }
+}
