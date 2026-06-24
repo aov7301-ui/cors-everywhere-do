@@ -62,7 +62,7 @@ Restart Node di VPS.
 Tes Amazon (ganti URL MPD yang masih valid):
 
 ```
-https://DomainAnda.com/cors/play.mpd?url=https%3A%2F%2Fotte.live.fly.ww.aiv-cdn.net%2F...%2Fcenc.mpd
+https://DOMAIN-ANDA.com/cors/play.mpd?url=https%3A%2F%2Fotte.live.fly.ww.aiv-cdn.net%2F...%2Fcenc.mpd
 ```
 
 Response header harus ada: `x-upstream-relay: https://APP-ANDA.ondigitalocean.app`
@@ -109,6 +109,16 @@ Pasang Nginx + SSL di depan port 8080 jika pakai domain sendiri.
 const proxy = "https://APP-ANDA.ondigitalocean.app/";
 const url = proxy + "https://otte.live.fly.ww.aiv-cdn.net/.../cenc.mpd";
 ```
+
+**Lewat VPS (disarankan — rewrite M3U8/MPD otomatis):**
+
+```javascript
+const url =
+  "https://DOMAIN-ANDA.COMcors/play.mpd?url=" +
+  encodeURIComponent("https://otte.live.fly.ww.aiv-cdn.net/.../cenc.mpd");
+```
+
+---
 
 ## Catatan
 
