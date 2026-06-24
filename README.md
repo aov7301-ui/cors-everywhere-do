@@ -47,7 +47,7 @@ curl -s "https://APP-ANDA.ondigitalocean.app/https://test-streams.mux.dev/x36xhz
 
 Harus muncul `#EXTM3U`.
 
-### 4. Hubungkan ke VPS tvkita.my.id
+### 4. Hubungkan ke VPS
 
 Di aaPanel Node Project → Environment:
 
@@ -62,7 +62,7 @@ Restart Node di VPS.
 Tes Amazon (ganti URL MPD yang masih valid):
 
 ```
-https://tvkita.my.id/cors/play.mpd?url=https%3A%2F%2Fotte.live.fly.ww.aiv-cdn.net%2F...%2Fcenc.mpd
+https://DomainAnda.com/cors/play.mpd?url=https%3A%2F%2Fotte.live.fly.ww.aiv-cdn.net%2F...%2Fcenc.mpd
 ```
 
 Response header harus ada: `x-upstream-relay: https://APP-ANDA.ondigitalocean.app`
